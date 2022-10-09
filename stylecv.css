@@ -1,0 +1,531 @@
+@font-face {
+    font-family: PublicSans;
+    src: url(./font-family/PublicSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: PublicSans-Bold;
+    src: url(./font-family/PublicSans-Bold.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Sektion 1 = Header och första bild på startsida */
+
+
+header {
+    position: fixed;
+    background-color: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+
+.main-navigation {
+    display: flex;
+    height: 40px;
+    margin: 20px 40px 20px 40px;
+    white-space: nowrap;
+    align-items: center;
+
+}
+
+.main-navigation h1 {
+    color: white;
+}
+
+.main-navigation ul {
+    text-align: right;
+    flex: 1;
+
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 20;
+    font-family: PublicSans;
+    padding: 11px;
+    background-color: rgba(11, 110, 202, 0.765);
+
+}
+
+.main-navigation li a {
+    text-decoration: none;
+    color: white;
+
+}    
+
+
+
+.main-navigation a:hover {
+    /*background-color: rgba(11, 110, 202, 0.796);*/
+    padding: 0px;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+/*.main-navigation h1 {
+    font-family: PublicSans;
+    color: white;
+    padding-left: 10%;
+}*/
+
+
+.burger-meny {
+    display: none;
+}
+
+
+.section1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black; /* ändra till vit sen */
+}
+
+/* Parallax effekt på banner bilden */
+.banner-picture {
+    background-image: url("./img/pawel-czerwinski-SoB70WFVWGU-unsplash.jpg");
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* Michelle K på sektion 1 bilden */
+.section1 .banner-text {
+    position: absolute; /* tar ut från normalt dokument flöde och förlorar space runom texten */
+    left: 18%; /* placerar text 19% från vänster */
+    top: 48%; /* placerar text 48% från topp */
+    color: white;
+    width: 40%;
+    z-index: 2;
+    font-family: PublicSans;
+}
+
+.banner-text p {
+    font-size: 50px;
+}
+
+
+
+
+/* Sektion 2 = Projects */
+
+
+
+.section2 {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*padding-top: 6%; padding mellan banner bild och section2 
+    padding-bottom: 10%;*/
+    margin-top: 4%;
+    margin-bottom: 10%;
+    
+
+}
+
+#flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#flex-container a{
+    text-decoration: none;
+    color: black;
+}
+
+#flex-container a:hover {
+    background-color: rgba(11, 110, 202, 0.796);
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
+   
+}
+
+
+.section2 h2 {
+    font-size: 25px;
+    font-family: PublicSans-bold;
+    color:  black;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section2 p {
+    font-family: PublicSans-bold;
+    font-size: 17px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    
+}
+
+/* testade hover effekt på bild */
+/* .picture1 img:hover {
+    
+    position: relative;
+    left: 4px;
+    
+}*/
+
+
+
+
+
+
+/* Sektion 3 - about me */
+
+
+
+.section3{
+    background-color: rgba(11, 110, 202, 0.765);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-bottom: 5%; /* space mellan sektion 3 och 4 */
+
+}
+
+/*.background-img {
+    background-image: url(./david-jorre-9f1gCaLkZBU-unsplash.jpg);
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}*/
+
+.section3 h2 {
+    font-size: 25px;
+    font-family: PublicSans-bold;
+    color:  white;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.section3 p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: PublicSans;
+    color:  white;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+/* Sektion 4 - Resume CV */
+
+.section4{
+    background-color:rgba(33, 110, 205, 0.863);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 15%; /* space mellan innehållsboxar och margin-bottom - förlänger bakgrundsbild */
+    margin-bottom: 10%; /* space mellan sektion 4 och sektion 5 */
+}
+
+/* Bakgrundsbild med parallax effekt */
+
+.background-section4 {
+    background-image: url(./img/milad-fakurian-Dkvmsxdnsgs-unsplash.jpg);
+    height: 1300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Rubrik ovanför 2 cv boxar */
+
+.section4 h2 {
+    font-size: 25px;
+    font-family: PublicSans-bold;
+    color: rgba(33, 110, 205, 0.863);
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+}
+
+/* Två boxar med cv */
+
+.two-boxar {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-evenly; /* sätter boxar i mitten*/
+}
+
+/* Box med cv innehållet */
+
+.contact {
+    background-color: white;
+    padding: 3%;
+    width: 40%;
+    display: inline-block;
+    margin-left: 1%;
+    border-radius: 5px;
+    
+}
+
+/* Rubriker i cv boxarna */
+
+.innehåll h3 {
+    font-size: 20px;
+    font-family: PublicSans-bold;
+    color: black;
+    text-align:left;
+    margin: 0;
+    padding-top: 50px; /* space mellan toppen av boxen till rubrik */
+    padding-bottom: 20px; /* space mallan rubrik och paragraf */
+
+}
+
+/* Paragraf under rubriker */
+
+.innehåll p {
+    font-family: PublicSans;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5em;
+
+}
+
+/* Skills box med skills gradienter */
+
+.skills {
+    width: 200px; /* ökar bredd på skills gradient boxen */
+    margin: 0;
+    color: black;
+    padding-bottom: 10%; /* förlänger bottom i boxen */
+}
+
+.skills li {
+    text-decoration: none;
+    list-style: none;
+    margin: 1%;
+    padding: 0.5%;
+}
+
+
+/* Block där skillsgradienten finns */
+
+.bar {
+    background: white;
+    display: block;
+    height: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+/* Färggradient i gradientbox */
+
+.bar span {
+    height: 10px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140,1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+
+/* Skills gradienten */
+
+.photoshop{
+    width: 90%;
+    animation: photoshop 3s;
+}
+
+.illustrator{
+    width: 90%;
+    animation: illustrator 3s;
+}
+
+.html{
+    width: 30%;
+    animation: html 3s;
+}
+
+.css{
+    width: 30%;
+    animation: css 3s;
+}
+
+.wordpress{
+    width: 20%;
+    animation: wordpress 3s;
+}
+
+
+/* Effekt där färggradient rör sig från 0% till 100% i gradientbox */
+
+@keyframes photoshop {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes illustrator {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes wordpress {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+
+
+/* Sektion 5 - Say hello! */
+
+.section5{
+    background-color:  white;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    margin-bottom: 5%;
+}
+
+.section5 h2 {
+    font-size: 25px;
+    font-family: PublicSans-bold;
+    color:  black;
+    padding-top: 50px;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid black;
+}
+
+.section5 form {
+    font-size: 20px;
+    font-family: PublicSans;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.form-box {
+    background-color: white;
+  
+
+}
+
+
+
+
+
+
+/* Sektion 6 = Footer */
+
+footer {
+    background-color: rgba(33, 110, 205, 0.863);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+}
+
+.box-footer {
+    background-color: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10%; /*ändrar storleken på footern*/
+    padding-bottom: 10%; /*ändrar storleken på footern*/
+}
+
+.innehåll-footer {
+    background-color: none;
+    width: 12%;
+    justify-content: center;
+    display: inline-block;
+    position: relative;
+    margin: 2%;
+}
+
+.innehåll-footer h5 {
+    font-size: 25px;
+    font-family: PublicSans-bold;
+    color: white;
+}
+
+.innehåll-footer p {
+    font-size: 20px;
+    font-family: PublicSans;
+    color: white;
+}
+
+
+
