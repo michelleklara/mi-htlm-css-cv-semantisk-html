@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./Sass/stylecv.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>CV Michelle K</title>
+        <head>
+            <meta charset="utf-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <meta name="description" content="Michelles portfolio and resume."/>
+            <link rel="stylesheet" href="./Css/stylecv.min.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <title>Michelle K</title>
+        </head>
     </head>
 
 
@@ -28,10 +31,13 @@
 
         <main>
             <section class="section1">
-                <div class="banner-picture"></div>
-                    <div class="banner-text">
-                        <p><a href="./index.html">Michelle </a></p> <!--Hem knapp i text-->
-                    </div>     
+                <div class="banner-picture">
+                    <!--Effekt på span -> flygande text -->
+                    <div class="effect-text">HELLO</div> 
+                    <div class="effect-text2"> 
+                    <span>I'm Michelle </span>
+                    </div>
+                </div>    
             </section>
 
             <section class="section2">
@@ -70,20 +76,19 @@
 
                 <div class="innehåll-footer">
                     <h5>Contact</h5>
-                    <p> Michelle K...</p>
+                    <p> Michelle K</p>
                     <p>&#169; Michelle 2022</p>
-                  
                 </div>
     
                 <div class="innehåll-footer">
                     <h5>Projects</h5>
-                    
-               
                 </div>
     
                 <div class="innehåll-footer">
-                    <h5>Info</h5>
-                  
+                    <h5>Projects</h5>
+                    <p>Digital art</p>
+                    <p>Front End & Webdesign</p>
+                    <p>Design</p>
                 </div>
     
                 <div class="innehåll-footer">
@@ -95,9 +100,15 @@
                 </div>
     
             </div>
-
         </footer>
-
-
     </body> 
+
+    <!--Hamburgarmeny i mobil skärmstorlek-->
+    <script type="text/javascript"> 
+        console.dir(document.getElementsByClassName("burger"))
+        document.getElementsByClassName("burger-meny")[0].addEventListener("click", function (){
+            document.getElementById("meny").classList.toggle("showing")
+        })
+    </script>
+
 </html>           
