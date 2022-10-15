@@ -37,7 +37,7 @@ body {
 header {
     position: relative; /* header hamnar ovanför bilden, och stannar på sin position (använde fixed tidigare,
     för att headern skulle följa med när man skrollar) */
-    background-color: none;
+    background-color: rgba(0, 0, 255, 0);
     width: 100%;
     top: 0;
     left: 0;
@@ -70,7 +70,7 @@ header {
 .main-navigation ul li {
     display: inline-block;
     margin: 0 30px;
-    font-size: 20;
+    font-size: 20px;
     font-family: $publicsans;
     padding: 11px;
     background-color: $colorblue;
@@ -646,7 +646,7 @@ footer {
 }
 
 .box-footer {
-    background-color: none;
+    background-color: rgba(0, 0, 255, 0);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -656,7 +656,7 @@ footer {
 }
 
 .innehåll-footer {
-    background-color: none;
+    background-color: rgba(0, 0, 255, 0);
     width: 12%;
     justify-content: center;
     display: inline-block;
