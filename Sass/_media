@@ -44,7 +44,6 @@
     }
 
     .section2 p {
-        font-family: $publicsans;
         font-size: 17px;
         padding-top: 5%;
         padding-bottom: 5%;
